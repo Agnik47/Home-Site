@@ -19,7 +19,7 @@ const SignUp = () => {
 
     try {
       if (currentState === "SignUp") {
-        createUserWithEmailAndPassword(auth, email, password);
+        createUserWithEmailAndPassword(auth, username, email, password);
         toast.success("Account Created SucessFully");
         navigate("/");
       } else {

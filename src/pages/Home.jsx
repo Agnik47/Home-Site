@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopNav from "../components/TopNav";
 import assets from "../assets/assets";
+import About from "../components/About";
 
 const Home = () => {
+  
   return (
-    <div className="relative w-full h-screen" id="header">
+    <div className="relative w-full h-screen" id="home">
       <TopNav />
       <div className="hero"></div>
       <img
@@ -25,6 +27,8 @@ const Home = () => {
           Contact Us
         </button>
       </div>
+
+      <About/>
     </div>
   );
 };
